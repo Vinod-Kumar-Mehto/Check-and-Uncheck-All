@@ -1,0 +1,64 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+h2{
+    text-align: center;
+}
+.wrapper{
+    width: 230px;
+    display: block;
+    background-color: rgb(244, 247, 252);
+    transform: translateX(200%);
+    margin-top: 10%;
+    border : 5px solid black;
+    padding-bottom: 15px;
+}
+
+.add_item{
+    float: left;
+}
+
+.plates{
+    list-style: none;
+    margin-top: 20px;
+}
+.plates input{
+    display: none;
+}
+.plates input + label::before{
+    content:" " ;
+    margin-right: 10px;
+    
+}
+
+.plates input:checked + label::before{
+    content:"\2614" ;
+    
+}
+[type="text"]{
+    width: 150px;
+    height: 30px;
+    border-radius: 10px;
+    float: left;
+}
+
+[type="submit"]{
+        width:70px;
+        height:30px;
+        border-radius: 10px;
+        float: right;
+}
+button{
+    margin-top: 15px;
+}
+.checkall{
+    float: left;
+}
+.uncheckall{
+    float: right;
+}
+.clearall{
+    margin-left: 22px;
+}
